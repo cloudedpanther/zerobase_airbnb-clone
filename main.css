@@ -5,6 +5,8 @@
     margin: 0 auto;
 }
 
+/* header */
+
 header {
     text-align: center;
     padding-top: 20px;
@@ -114,6 +116,81 @@ header .gnb .menu .profile {
 }
 
 header .gnb .search {
-    grid-area: search;
-    
+    grid-area: search;    
+    width: 70%;
+    margin: 10px auto 0 auto;
+}
+
+header .gnb .search .search-list {
+    background-color: white;
+    color: black;
+    display: flex;
+    border-radius: 50px;
+}
+
+header .gnb .search .search-list li {
+    width: 25%;
+    text-align: left;
+    padding: 20px 50px 20px 20px;
+    font-weight: bold;
+    border-radius: 50px;
+    position: relative;
+}
+
+header .gnb .search .search-list li::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    width: 1px;
+    height: calc(100% - calc(20px * 2));
+    background-color: lightgray;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+header .gnb .search .search-list li:last-of-type:after {
+    display: none;
+}
+
+header .gnb .search .search-list li:hover {
+    background-color: lightgray;
+}
+
+header .gnb .search .search-list li span {
+    color: gray;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+/* notice */
+
+.notice {
+    background-color: #ff385c;
+    border-radius: 14px;
+    text-align: center;
+    height: 320px;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.notice p {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    line-height: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.notice button {
+    border: 1px solid white;
+    padding: 5px 15px;
+    color: white;
+    background-color: inherit;
+    font-weight: bold;
+    border-radius: 5px;
 }
