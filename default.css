@@ -12,3 +12,9 @@
     color: black;
     font-weight: bolder;
 }
+
+@media screen and (max-width: 767px) {
+    .heading {
+        font-size: 1.6rem;
+    }
+}
